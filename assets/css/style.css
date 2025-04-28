@@ -1,0 +1,96 @@
+
+/* ریست کلی */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Vazir', sans-serif;
+  background-color: #121212;
+  color: #eee;
+  line-height: 1.6;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+header {
+  background: #1f1f1f;
+  padding: 20px 0;
+}
+header h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+nav {
+  text-align: center;
+}
+nav a {
+  color: #eee;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #00bcd4;
+}
+section {
+  padding: 60px 0;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.project {
+  background: #1f1f1f;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.project:hover {
+  transform: translateY(-10px);
+}
+.project img {
+  width: 100%;
+  border-radius: 8px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form input, form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  background: #1f1f1f;
+  border: none;
+  color: #eee;
+  border-radius: 5px;
+}
+form button {
+  padding: 10px;
+  background: #00bcd4;
+  color: #121212;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1f1f1f;
+  margin-top: 30px;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

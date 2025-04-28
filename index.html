@@ -4,98 +4,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>نمونه کار من</title>
-  <style>
-    body {
-      margin: 0;
-      background-color: #121212;
-      color: #e0e0e0;
-      font-family: 'Vazir', sans-serif;
-    }
-    header, footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #1f1f1f;
-    }
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: #e0e0e0;
-      font-weight: bold;
-    }
-    .intro {
-      text-align: center;
-      padding: 2rem;
-    }
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      padding: 2rem;
-    }
-    .project-card {
-      background-color: #2a2a2a;
-      padding: 1rem;
-      border-radius: 8px;
-      text-align: center;
-    }
-    .project-card img {
-      width: 100%;
-      border-radius: 5px;
-    }
-    section {
-      padding: 2rem;
-    }
-  </style>
+  <title>نمونه کار من - حرفه‌ای</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 <header>
-  <h1>نمونه کار من</h1>
-  <nav>
-    <a href="#projects">نمونه کارها</a>
-    <a href="#about">درباره من</a>
-    <a href="#contact">تماس</a>
-  </nav>
+  <div class="container">
+    <h1>سعید غامین</h1>
+    <nav>
+      <a href="#home">خانه</a>
+      <a href="#projects">نمونه کارها</a>
+      <a href="#about">درباره من</a>
+      <a href="#contact">تماس</a>
+    </nav>
+  </div>
 </header>
 
-<section class="intro">
-  <h2>سلام! من [سعید غامین] هستم</h2>
-  <p>طراح وب | توسعه‌دهنده فرانت‌اند | عاشق خلاقیت!</p>
-</section>
-
-<section id="projects" class="projects">
-  <div class="project-card">
-    <img src="https://via.placeholder.com/300x200" alt="نمونه کار ۱">
-    <h3>پروژه شماره ۱</h3>
-    <p>توضیح کوتاه درباره پروژه.</p>
-  </div>
-  <div class="project-card">
-    <img src="https://via.placeholder.com/300x200" alt="نمونه کار ۲">
-    <h3>پروژه شماره ۲</h3>
-    <p>توضیح کوتاه درباره پروژه.</p>
-  </div>
-  <div class="project-card">
-    <img src="https://via.placeholder.com/300x200" alt="نمونه کار ۳">
-    <h3>پروژه شماره ۳</h3>
-    <p>توضیح کوتاه درباره پروژه.</p>
+<section id="home" class="home-section">
+  <div class="container">
+    <h2 class="fade-in">خوش آمدید به وبسایت من!</h2>
+    <p class="fade-in">من طراح و توسعه‌دهنده‌ی وب هستم.</p>
   </div>
 </section>
 
-<section id="about">
-  <h2>درباره من</h2>
-  <p>چند خط توضیح درباره مهارت‌ها، تجربه‌ها و علاقه‌مندی‌های شما.</p>
+<section id="projects" class="projects-section">
+  <div class="container">
+    <h2 class="fade-in">نمونه کارها</h2>
+    <div class="projects-grid">
+      <div class="project fade-in">
+        <img src="assets/images/project1.jpg" alt="پروژه ۱">
+        <h3>پروژه شماره ۱</h3>
+      </div>
+      <div class="project fade-in">
+        <img src="assets/images/project2.jpg" alt="پروژه ۲">
+        <h3>پروژه شماره ۲</h3>
+      </div>
+      <div class="project fade-in">
+        <img src="assets/images/project3.jpg" alt="پروژه ۳">
+        <h3>پروژه شماره ۳</h3>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="contact">
-  <h2>تماس با من</h2>
-  <p>ایمیل: example@email.com</p>
-  <p>اینستاگرام: @yourusername</p>
+<section id="about" class="about-section">
+  <div class="container fade-in">
+    <h2>درباره من</h2>
+    <p>من عاشق ساخت وبسایت‌های مدرن و خلاقانه هستم و به جزئیات اهمیت می‌دهم.</p>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="container fade-in">
+    <h2>تماس با من</h2>
+    <form>
+      <input type="text" placeholder="نام شما">
+      <input type="email" placeholder="ایمیل شما">
+      <textarea placeholder="پیام شما"></textarea>
+      <button type="submit">ارسال</button>
+    </form>
+  </div>
 </section>
 
 <footer>
   <p>© 2025 - ساخته شده توسط سعید غامین</p>
 </footer>
 
+<script src="assets/js/script.js"></script>
 </body>
 </html>
